@@ -1,0 +1,60 @@
+<div class="panel-group" id="accordion">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#CourseCollapse"><span class="glyphicon glyphicon-user"></span>
+              车型</a>
+      </h4>
+    </div>
+
+    <div id="CourseCollapse" class="panel-collapse collapse <%= "in" if ["courses"].include?(params[:controller]) %>">
+      <ul class="list-group">
+            <li class="list-group-item">
+              <%= link_to car_index_path do %>
+                  <span class="glyphicon glyphicon-chevron-right"></span> 车型添加
+                  <span class="label label-info pull-right"></span>
+                   <% end %>
+            </li>
+            <li class="list-group-item">
+              <%= link_to new_car_path do %>
+                  <span class="glyphicon glyphicon-chevron-right"></span> 车评发布
+                  <span class="label label-info pull-right"></span>
+                   <% end %>
+            </li>
+
+      </ul>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#GradeCollapse"><span class="glyphicon glyphicon-user"></span>
+              管理与排行</a>
+      </h4>
+    </div>
+
+    <div id="GradeCollapse" class="panel-collapse collapse ">
+      <div class="list-group">
+            <li class="list-group-item">
+              <%= link_to list_car_index_path do %>
+                  <span class="glyphicon glyphicon-chevron-right">车评管理</span> 
+                   <% end %>
+            </li>
+             <li class="list-group-item">
+              <%= link_to conque_car_index_path do %>
+                  <span class="glyphicon glyphicon-chevron-right">车评排行</span> 
+               <% end %>
+            </li>
+              <li class="list-group-item">
+              <%= link_to search_car_index_path do %>
+                  <span class="glyphicon glyphicon-chevron-right">车评浏览</span> 
+               <% end %>
+            </li>
+      </div>
+    </div>
+  
+  </div>
+</div>
+</div>

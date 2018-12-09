@@ -1,0 +1,23 @@
+
+<head>
+  <title>The Car</title>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+        <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+ <%= stylesheet_link_tag 'https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css' %>
+  <%= stylesheet_link_tag 'https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css' %>
+  <%= stylesheet_link_tag '/css/stylish' %>
+  <meta>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <%= csrf_meta_tags %>
+</head>
+
+<body class="<%= "body-background" if params[:controller]!="homes" %>">
+
+<%= render partial: 'layouts/header' %>
+<%= render partial: 'layouts/content' %>
+<%= render partial: 'layouts/footer' %>
+
+</body>
+</html>

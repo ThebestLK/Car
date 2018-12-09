@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* line 4, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+body {
+  background: url("/app/assets/images/background.jpg");
+}
+
+@keyframes myfirst {
+  0% {
+    background: url("/app/assets/images/background.jpg");
+  }
+  34% {
+    background: url("/app/assets/images/Car1.jpg");
+  }
+  67% {
+    background: url("/app/assets/images/Car2.jpg");
+  }
+  100% {
+    background: url("/app/assets/images/Car4.jpg");
+  }
+}
+/* line 15, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.form {
+  background: rgba(255, 255, 255, 0.2);
+  width: 400px;
+  margin: 120px auto;
+}
+
+/*阴影*/
+/* line 17, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.fa {
+  display: inline-block;
+  top: 27px;
+  left: 6px;
+  position: relative;
+  color: #ccc;
+}
+
+/* line 18, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+input[type="text"], input[type="password"] {
+  padding-left: 26px;
+}
+
+/* line 19, /home/ubuntu/workspace/app/assets/stylesheets/home.scss */
+.checkbox {
+  padding-left: 21px;
+}
